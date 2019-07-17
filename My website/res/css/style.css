@@ -23,6 +23,7 @@ html {
 
 section{
     padding: 80px 0 ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5))
     
 }
 
@@ -174,4 +175,43 @@ header {
     border-bottom: 2px solid #649994;
     color: #82b1ac;
     transition: border-bottom , .3s ;
+}
+
+
+
+
+/*******images************/
+.section-2{
+    padding: 0;
+    
+}
+
+.phones{
+    list-style: none;
+    width: 100%;
+}
+.phones li{
+    display: block;
+    float: left;
+    width: 25%;
+    
+}
+.phone-img{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+.phone-img img{
+    opacity: 0.8;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);    
+}
+.phone-img img:hover{
+    opacity: 1;
+    background-color: transparent;
+    transform: scale(1.05);
+    transition:transform .6s,opacity .6s;
+/*    transition:opacity .6s;*/
 }
