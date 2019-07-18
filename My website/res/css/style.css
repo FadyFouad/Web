@@ -159,6 +159,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 
@@ -258,11 +259,12 @@ Section-3
 .section-3-box:first-child {
     text-align: right;
     padding-right: 3%;
+    margin-top: 30px;
 }
 
 .section-3-box:last-child {
     padding-left: 3%;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .app-screen {
@@ -281,10 +283,98 @@ Section-3
     height: 40px;
     width: 40px;
     text-align: center;
-    font-size: 130%;
-    padding: 5px;
+    font-size: 120%;
+    padding: 3px;
     float: left;
     margin-right: 15px;
+    line-height: 120%;
+    margin-top: -8px;
+    vertical-align: middle;
+}
 
 
+/*************
+Section-4
+***/
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 140%;
+}
+
+cite {
+    font-size: 85%;
+    margin-top: 20px;
+    display: block;
+}
+
+cite img {
+    width: 50px;;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*************
+Section-5
+***/
+
+
+.plan-box {
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 10%;
+    color: #004144;
+    padding: 10px;
+    align-content: center;
+    box-shadow: 0 2px 2px #000000;
+
+}
+
+.plan-box h3 {
+    color: #045155;
+    border-bottom: #045155;
+}
+
+.plan-box div {
+    padding: 5px;
+    margin: 0 15px;
+    border-bottom: 1px solid #045155;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid transparent;
+}
+
+.p-plan {
+    font-size: 150%;
+    margin-bottom: 10px;
+    font-weight: 200;
+    width: 100%;
+    color: #00204d;
+}
+
+.p-plan-object {
+
+}
+
+.plan-box ul {
+    list-style: none;
+
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+.checkmark { /*todo change icon */
+    color: #00204d;
+    margin-top: -8px;
+    vertical-align: middle;
+    padding: 10px;
 }
