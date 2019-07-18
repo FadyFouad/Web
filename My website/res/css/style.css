@@ -13,6 +13,18 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clear-fix {
+    zoom: 1;
+}
+
+.clear-fix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*****************************/
 
 .row {
@@ -21,70 +33,85 @@ html {
     margin-right: auto;
 }
 
-section{
-    padding: 80px 0 ;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5))
-    
+section {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5))
+
 }
 
-.box{
+.box {
     padding: 1%;
 }
 
 
 /*****************************/
 
-h1,h2,h3 {
+h1, h2, h3 {
     margin: 0;
     color: #fff;
     word-spacing: 3px;
     font-weight: 300;
 }
 
-h1{
+h1 {
     font-size: 220%;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-h2{
+
+h2 {
     font-size: 180%;
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 20px;
 }
-h3{
-    font-size: 110%; 
-    margin-bottom: 20px;
+
+h2:after { /* the line under H2 */
+    left: 45%;
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 2px;
+    margin-top: 10px;
+    content: " ";
+    background: red;
 }
-.box p {
-    font-size: 90%;
-    line-height: 140%;
-}
+
 /*
 h2:after {
-  content: '';
-  width: 120px;
-  height: 2px;
-  background: red;
-  position: absolute;
-  margin: 0 auto;
-  margin-top: 45px;
+    content: '';
+    width: 120px;
+    height: 2px;
+    text-align: center;
+    background: red;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 45px;
   
 }
 */
 
+h3 {
+    font-size: 110%;
+    margin-bottom: 20px;
+}
 
-.about{
+.box p {
+    font-size: 90%;
+    line-height: 140%;
+}
+
+
+.about {
     line-height: 130%;
     width: 70%;
     margin-left: 15%;
 }
 
 
-
 /**********Icons**************/
 
-.icons{
+.icons {
     font-size: 300%;
     color: #75aaa5;
     display: block;
@@ -144,7 +171,6 @@ header {
 }
 
 
-
 .logo {
     height: 100px;
     width: 100px;
@@ -156,13 +182,15 @@ header {
     float: right;
     list-style: none;
 }
+
 .first-age-nav li {
-    display: inline-block; 
+    display: inline-block;
     margin-left: 30px;
     margin-top: 25px;
 }
+
 .first-age-nav li a:link,
-.first-age-nav li a:visited{
+.first-age-nav li a:visited {
     padding: 5px 0 5px 0;
     color: #fff;
     text-decoration: none;
@@ -171,47 +199,92 @@ header {
 }
 
 .first-age-nav li a:hover,
-.first-age-nav li a:active{
+.first-age-nav li a:active {
     border-bottom: 2px solid #649994;
     color: #82b1ac;
-    transition: border-bottom , .3s ;
+    transition: border-bottom, .3s;
 }
-
-
 
 
 /*******images************/
-.section-2{
+.section-2 {
     padding: 0;
-    
+
 }
 
-.phones{
+.phones {
     list-style: none;
     width: 100%;
 }
-.phones li{
+
+.phones li {
     display: block;
     float: left;
     width: 25%;
-    
+
 }
-.phone-img{
+
+.phone-img {
     width: 100%;
     margin: 0;
     overflow: hidden;
 }
-.phone-img img{
+
+.phone-img img {
     opacity: 0.8;
     background-color: black;
     width: 100%;
     height: auto;
-    transform: scale(1.15);    
+    transform: scale(1.15);
 }
-.phone-img img:hover{
+
+.phone-img img:hover {
     opacity: 1;
     background-color: transparent;
     transform: scale(1.05);
-    transition:transform .6s,opacity .6s;
-/*    transition:opacity .6s;*/
+    transition: transform .6s, opacity .6s;
+    /*    transition:opacity .6s;*/
+}
+
+
+/*************
+Section-3
+***/
+
+.section-3-box {
+    margin-top: 30px;
+}
+
+.section-3-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.section-3-box:last-child {
+    padding-left: 3%;
+    margin-top: 10px;
+}
+
+.app-screen {
+    width: 60%;
+}
+
+.explain {
+    margin-bottom: 30px;
+}
+
+.explain div {
+    color: #649994;
+    border: 2px solid #649994;
+    display: inline-block;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 130%;
+    padding: 5px;
+    float: left;
+    margin-right: 15px;
+
+
 }
