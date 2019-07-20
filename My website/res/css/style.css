@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -35,6 +36,7 @@ html {
 
 section {
     padding: 80px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.5)));
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5))
 
 }
@@ -149,12 +151,14 @@ h3 {
 .btn:active {
     background-color: #054343;
     color: #93bab7;
+    -webkit-transition: background-color 0.3s, color .3s;
     transition: background-color 0.3s, color .3s;
 }
 
 /**********Headers**************/
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url(img/bg1.png);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(img/bg1.png);
     background-size: cover;
     background-position: center;
@@ -168,6 +172,7 @@ header {
     width: 1130px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -203,6 +208,7 @@ header {
 .first-age-nav li a:active {
     border-bottom: 2px solid #649994;
     color: #82b1ac;
+    -webkit-transition: border-bottom, .3s;
     transition: border-bottom, .3s;
 }
 
@@ -236,14 +242,19 @@ header {
     background-color: black;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
 }
 
 .phone-img img:hover {
     opacity: 1;
     background-color: transparent;
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
+    -webkit-transition: opacity .6s, -webkit-transform .6s;
+    transition: opacity .6s, -webkit-transform .6s;
     transition: transform .6s, opacity .6s;
+    transition: transform .6s, opacity .6s, -webkit-transform .6s;
     /*    transition:opacity .6s;*/
 }
 
@@ -267,9 +278,7 @@ Section-3
     margin-top: 50px;
 }
 
-.app-screen {
-    width: 60%;
-}
+.app-screen {width: 60%;}
 
 .explain {
     margin-bottom: 30px;
@@ -329,7 +338,9 @@ Section-5
     margin-left: 10%;
     color: #004144;
     padding: 10px;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-shadow: 0 2px 2px #000000;
     box-shadow: 0 2px 2px #000000;
 
 }
@@ -409,9 +420,7 @@ footer {
 }
 
 .footer-nav li a:link,
-.footer-nav li a:visited,
-.social-links li a ion-icon:link,
-.social-links li a ion-icon:visited {
+.footer-nav li a:visited{
     margin-right: 0;
     text-decoration: none;
     border: 0;
@@ -422,6 +431,7 @@ footer {
 .footer-nav li a:hover,
 .footer-nav li a:active {
     color: #83cdd1;
+    -webkit-transition: color .2s;
     transition: color .2s;
 }
 
@@ -438,6 +448,7 @@ footer p {
 .logo-instagram {
     color: #0a595d;
     font-size: 120%;
+    -webkit-transition: color .2s;
     transition: color .2s;
 }
 
