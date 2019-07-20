@@ -178,13 +178,13 @@ header {
 
 
 .logo {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     float: left;
     margin: 15px 0 30px 5px;
 }
 
-.first-age-nav {
+.first-age-nav { /*should be Page not age*/
     float: right;
     list-style: none;
 }
@@ -211,6 +211,7 @@ header {
     -webkit-transition: border-bottom, .3s;
     transition: border-bottom, .3s;
 }
+
 
 
 /*******images************/
@@ -472,3 +473,49 @@ footer p {
     color: #c32aa3;
 
 }
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #21294b;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+    z-index:1;
+}
+
+
+.sticky .first-age-nav { /*should be Page not age*/
+    float: right;
+    list-style: none;
+}
+
+.sticky .first-age-nav li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.sticky .first-age-nav li a:link,
+.sticky .first-age-nav li a:visited {
+    padding: 5px 0 5px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid rgba(100, 153, 148, 0);
+}
+
+.sticky .first-age-nav li a:hover,
+.sticky .first-age-nav li a:active {
+    border-bottom: 2px solid #649994;
+    color: #82b1ac;
+    -webkit-transition: border-bottom, .3s;
+    transition: border-bottom, .3s;
+}
+
+.sticky .logo{
+    height: 40px ;
+    width: auto;
+    margin: 10px;
+}   
