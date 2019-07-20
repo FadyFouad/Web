@@ -1,0 +1,111 @@
+/*small laptob 1023-1200px*/
+@media only screen and (max-width: 1200px) {
+
+    .hero-text-box {
+        position: absolute;
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+
+}
+
+/*big tab 768-1023px*/
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 90%;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .about {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .app-screen {
+        width: 85%;
+    }
+
+
+}
+
+
+/*Small Taplets 480-767px*/
+@media only screen and (max-width: 767px) {
+    .logo {
+        height: 70px;
+        width: 70px;
+        float: left;
+        margin: 15px 0 30px 5px;
+    }
+
+
+}
+
+/*Small Phones 0-480px*/
+@media only screen and (max-width: 480px) {
+
+    body {
+        font-size: 75%;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    .row {
+        padding: 0 4%
+    }
+
+    .col {
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+
+    .social-links {
+        list-style: none;
+        float: left;
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+        float: left;
+        margin: 15px 0 30px 5px;
+        display: inline-block;
+    }
+
+    .first-age-nav li {
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 25px;
+        font-size: 80%
+    }
+
+    .hero-text-box {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+    }
+
+    .explain div {
+        color: #649994;
+        border: 2px solid #649994;
+        display: inline-block;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+
+    }
+}
+
+
