@@ -45,56 +45,53 @@
         margin: 15px 0 30px 5px;
     }
 
-    
-    .nav-icon{
+
+    .nav-icon {
         display: inline-block;
     }
-    
-    .first-age-nav li{
-        display: block;
+
+    .first-age-nav li {
+        display: none;
     }
 
     .first-age-nav li a:link,
-    .first-age-nav li a:visited{
+    .first-age-nav li a:visited {
         display: block;
     }
-    
-    
-    
+
+
     .sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #21294b;
-    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
-    z-index:1;
-}
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #21294b;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
 
 
-.sticky .first-age-nav { /*should be Page not age*/
-    float: right;
-    list-style: none;
-}
+    .sticky .first-age-nav { /*should be Page not age*/
+        float: right;
+        list-style: none;
+    }
 
-.sticky .first-age-nav li {
-    display: block;
-    margin-left: 30px;
-    margin-top: 25px;
-}
+    .sticky .first-age-nav li {
+        display: none;
+        margin-left: 30px;
+        margin-top: 25px;
+    }
 
-.sticky .first-age-nav li a:link,
-.sticky .first-age-nav li a:visited {
-    padding: 5px 0 5px 0;
-    color: #fff;
-    text-decoration: none;
-    font-size: 90%;
-    border-bottom: 2px solid rgba(100, 153, 148, 0);
-}
+    .sticky .first-age-nav li a:link,
+    .sticky .first-age-nav li a:visited {
+        padding: 5px 0 5px 0;
+        color: #fff;
+        text-decoration: none;
+        font-size: 90%;
+        border-bottom: 2px solid rgba(100, 153, 148, 0);
+    }
 
-]
 
-    
 
 }
 
@@ -134,15 +131,14 @@
         display: inline-block;
     }
 
-/*
-    .first-age-nav li {
-        display: inline-block;
-        margin-left: 30px;
-        margin-top: 25px;
-        font-size: 80%
-    }
-*/
-
+    /*
+        .first-age-nav li {
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: 25px;
+            font-size: 80%
+        }
+    */
     .hero-text-box {
         position: absolute;
         width: 100%;

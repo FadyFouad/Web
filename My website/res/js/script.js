@@ -13,6 +13,23 @@ $(document).ready(function () {
 
     });
 
+    //nav-bar mobile
+    $('.js-nav-icon').click(function(){
+        var nav = $('.sticky .first-age-nav li');
+        var nav = $('.first-age-nav li');
+        nav.slideToggle(300);
+    
+        
+          
+        if($("#iconNav").attr("name")=="menu"){
+            $("#iconNav").attr("name","close");
+
+        }else if($("#iconNav").attr("name")=="close"){
+            $("#iconNav").attr("name","menu");
+        }
+        
+    }); 
+    
 
     $('.js-scrol-to-plan').click(function () {
 
