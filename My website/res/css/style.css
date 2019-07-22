@@ -212,6 +212,17 @@ header {
     transition: border-bottom, .3s;
 }
 
+.nav-icon{/*mobile-nav*/
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-icon ion-icon{
+    font: 200%;
+    color: #fff;
+}
 
 
 /*******images************/
@@ -519,3 +530,16 @@ footer p {
     width: auto;
     margin: 10px;
 }   
+
+/*************
+animation
+***/
+
+.js-animate-row,
+.js-animate-row-2{
+    opacity: 0;
+}
+.js-animate-row.animated,
+.js-animate-row-2.animated{
+    opacity: 1;
+}

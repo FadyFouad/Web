@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="res/css/style.css">
     <link rel="stylesheet" type="text/css" href="res/css/queries.css">
     <link rel="stylesheet" type="text/css" href="other/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="other/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="other/css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap&subset=cyrillic" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
@@ -17,31 +17,34 @@
 </head>
 <body>
 <header>
-    
+
     <nav>
         <div class="row">
             <img class="logo" src="res/img/logo.svg" alt="LOGO">
             <ul class="first-age-nav">
-                <li><a href="#">Nav 1</a></li>
-                <li><a href="#">Nav 2</a></li>
-                <li><a href="#">Nav 3</a></li>
-                <li><a href="#">Nav 4</a></li>
-                <li><a href="#">Nav 5</a></li>
+                <li><a href="#sec-1" class="js-sec-1">sec 1</a></li>
+                <li><a href="#sec-2" class="js-sec-2">sec 2</a></li>
+                <li><a href="#sec-3" class="js-sec-3">sec 3</a></li>
+                <li><a href="#sec-4" class="js-sec-4">sec 4</a></li>
+                <li><a href="#sec-5" class="js-sec-5">sec 5</a></li>
             </ul>
+            <a class="nav-icon">
+                <ion-icon name="menu"></ion-icon>
+            </a>
         </div>
     </nav>
 
     <div class="hero-text-box">
 
         <h1>Head line 1 </h1>
-        <a class="btn btn-full" href="#">link 1 </a>
+        <a class="btn btn-full js-scrol-to-plan" href="#">link 1 </a>
         <a class="btn btn-ghost" href="#">link 2 </a>
 
     </div>
 
 </header>
 
-<section class="section-1 js-section-1">
+<section class="section-1 js-section-1" id="sec-1">
 
     <div class="row">
         <!--        <ion-icon name="apps"></ion-icon>-->
@@ -51,7 +54,7 @@
             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
         </p>
 
-        <div class="row">
+        <div class="row js-animate-row">
 
             <div class="col span-1-of-3 box">
                 <ion-icon name="checkmark-circle" class="icons"></ion-icon>
@@ -90,7 +93,7 @@
 </section>
 
 
-<section class="section-2">
+<section class="section-2" id="sec-2">
 
     <ul class="phones clear-fix">
         <li>
@@ -140,7 +143,7 @@
 
 </section>
 
-<section class="section-3">
+<section class="section-3" id="sec-3">
 
     <div class="row">
 
@@ -151,7 +154,7 @@
 
         <div class="col span-1-of-2 section-3-box">
 
-            <img src="res/img/ios-1.jpg" alt="app image" class="app-screen">
+            <img src="res/img/ios-1.jpg" alt="app image" class="app-screen js-animate-row-2">
 
         </div>
         <div class="col span-1-of-2 section-3-box">
@@ -182,7 +185,7 @@
 
 </section>
 
-<section class="section-4">
+<section class="section-4" id="sec-4">
 
     <div class="row">
         <h2>Dummy text h2</h2>
@@ -237,7 +240,7 @@
 
 </section>
 
-<section class="section-5">
+<section class="section-5" id="sec-5">
 
     <div class="row">
         <h2>Select Your Plan</h2>
@@ -247,7 +250,7 @@
 
         <div class="col span-1of-3">
 
-            <div class="plan-box">
+            <div class="plan-box js-animate-row-3">
 
                 <div>
                     <h3>plan 1</h3>
